@@ -31,10 +31,12 @@ version: 1.9.2
 
 - **题材股 / 纯概念炒作**（主题叙事主导、基本面无法支撑）
 - **小市值股**（流动性差、治理与信息披露波动大，价值框架易失真）
-- **亏损股 / 长期微利靠非经常性损益**（无稳定自由现金流叙事）
+- **亏损股 / 长期微利靠非经常性损益**（无稳定自由现金流叙事）→ 高成长未盈利或高 PE 创新公司改用 `[growth-tech-research](../growth-tech-research/SKILL.md)`
+- **半导体 / 创新药 / 互联网软件等成长叙事主导、且用户要空间与成长估值** → `[growth-tech-research](../growth-tech-research/SKILL.md)`（不要用本框架的 PB-ROE 硬套）
+- **成熟主业 + 颠覆高方差**（平台巨头、品牌消费、潮玩 IP 等；如腾讯/阿里、珀莱雅/巨子生物、泡泡玛特）→ `[platform-leader-research](../platform-leader-research/SKILL.md)`（分板块 + 颠覆专章 + SOTP，不要用本框架硬套）
 - **纯短线、打板、情绪博弈**需求（应改走 `a-stock-pulse` 等交易向 skill）
 
-若用户坚持分析不适用标的：先说明本 skill 边界，再问是否改用「景气/主题」或「短线」框架；**不要假装按价值龙头流程硬套**。
+若用户坚持分析不适用标的：先说明本 skill 边界，再问是否改用 `growth-tech-research`、`platform-leader-research`、「景气/主题」或「短线」框架；**不要假装按价值龙头流程硬套**。
 
 ## 核心原则（价值投资）
 

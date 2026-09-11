@@ -1,0 +1,27 @@
+{
+  "started": "2026-09-11T17:58:30.881310",
+  "today": "2026-09-11",
+  "errors": [
+    "stock_info: HTTPSConnectionPool(host='push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/get?fltt=2&invt=2&fields=f57%2Cf58%2Cf84%2Cf85%2Cf127%2Cf116%2Cf117%2Cf189%2Cf43&secid=1.600276 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))",
+    "tdx: 所有 mootdx 服务器均无法取到数据"
+  ],
+  "quotes": {
+    "600276": "恒瑞医药",
+    "600196": "复星医药",
+    "002422": "科伦药业",
+    "000661": "长春高新",
+    "002821": "凯莱英",
+    "sz399006": "创业板指",
+    "sh000300": "沪深300"
+  },
+  "val_rows": 2111,
+  "val_last": "2026-09-11",
+  "n_reports": 56,
+  "ths_eps_shape": [
+    3,
+    6
+  ],
+  "n_news": 50,
+  "n_anns": 30,
+  "finished": "2026-09-11T18:00:01.442322"
+}

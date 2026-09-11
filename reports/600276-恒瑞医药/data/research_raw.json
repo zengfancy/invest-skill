@@ -1,0 +1,20 @@
+{
+  "ticker": "600276",
+  "name": "恒瑞医药",
+  "framework": "growth-tech-research",
+  "valuation_route": "A",
+  "date_fin": "2026-06-30",
+  "date_cat": "2026-09-11",
+  "quote": {
+    "price": 42.67,
+    "pe_ttm": 36.65,
+    "pe_static": 31.71,
+    "pb": 4.39,
+    "ps_ttm": 9.04,
+    "mcap_yi": 2832.09,
+    "source": "tencent_quote 2026-09-11"
+  },
+  "consensus_eps": {"2026": 1.41, "2027": 1.65, "2028": 1.96, "source": "ths_eps"},
+  "forward_pe_2026": 30.26,
+  "notes": "sina无分部；创新药收入等来自公司披露/媒体转述，见 web_catalyst_notes.md。stock_info与tdx取数失败。"
+}
