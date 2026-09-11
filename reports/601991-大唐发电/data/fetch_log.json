@@ -1,0 +1,26 @@
+{
+  "started": "2026-09-10T11:49:08.465270",
+  "today": "2026-09-10",
+  "errors": [
+    "stock_info: HTTPSConnectionPool(host='push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/get?fltt=2&invt=2&fields=f57%2Cf58%2Cf84%2Cf85%2Cf127%2Cf116%2Cf117%2Cf189%2Cf43&secid=1.601991 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))",
+    "tdx: 所有 mootdx 服务器均无法取到数据"
+  ],
+  "quotes": {
+    "601991": "大唐发电",
+    "600011": "华能国际",
+    "600027": "华电国际",
+    "600795": "国电电力",
+    "600023": "浙能电力",
+    "sh000300": "沪深300"
+  },
+  "val_rows": 2109,
+  "val_last": "2026-09-09",
+  "n_reports": 4,
+  "ths_eps_shape": [
+    3,
+    6
+  ],
+  "n_news": 50,
+  "n_anns": 30,
+  "finished": "2026-09-10T11:51:14.719713"
+}

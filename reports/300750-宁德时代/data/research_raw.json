@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "code": "300750",
+    "name": "宁德时代",
+    "industry": "电池",
+    "list_date": "2018-06-11",
+    "date_fin": "2026-06-30",
+    "date_quote": "2026-09-10",
+    "date_val_last": "2026-09-09",
+    "date_cat": "2026-09-10",
+    "framework": "value-leader-research 1.7.0",
+    "tdx_status": "failed"
+  },
+  "quote_tencent_20260910": {
+    "price": 339.18,
+    "last_close": 336.84,
+    "change_pct": 0.69,
+    "pe_ttm": 18.46,
+    "pe_static": 18.13,
+    "pb": 4.21,
+    "mcap_yi": 15693.08,
+    "float_mcap_yi": 14449.73,
+    "turnover_pct": 0.36
+  },
+  "shares": {
+    "total": 4626770410,
+    "float": 4260196510
+  },
+  "annual_official_or_sina": [
+    {"year": 2021, "rev_yi": 1303.56, "np_yi": 159.31, "gm": 26.28, "nm": 12.22, "cfo_yi": 429.08, "capex_yi": 437.68, "fcf_yi": -8.6, "roe_wavg": 21.52, "eps": 6.876},
+    {"year": 2022, "rev_yi": 3285.94, "np_yi": 307.29, "gm": 20.25, "nm": 9.35, "cfo_yi": 612.09, "capex_yi": 482.15, "fcf_yi": 129.94, "roe_wavg": 24.67, "eps": 12.9178},
+    {"year": 2023, "rev_yi": 4009.17, "np_yi": 441.21, "gm": 19.19, "nm": 11.01, "cfo_yi": 928.26, "capex_yi": 336.25, "fcf_yi": 592.01, "roe_wavg": 24.04, "eps": 10.06},
+    {"year": 2024, "rev_yi": 3620.13, "np_yi": 507.45, "gm": 24.44, "nm": 14.02, "cfo_yi": 969.90, "capex_yi": 311.80, "fcf_yi": 658.10, "roe_wavg": 24.13, "eps": 11.58, "np_ex": 449.93},
+    {"year": 2025, "rev_yi": 4237.02, "np_yi": 722.01, "gm": 26.27, "nm": 17.04, "cfo_yi": 1332.20, "capex_yi": 423.45, "fcf_yi": 908.75, "roe_wavg": 24.91, "eps": 16.14, "np_ex": 645.08}
+  ],
+  "h1_2026": {
+    "rev_yi": 2769.17, "yoy_rev": 0.5480,
+    "np_yi": 432.84, "yoy_np": 0.4198,
+    "np_ex_yi": 390.13, "yoy_np_ex": 0.4344,
+    "gm": 23.93, "nm": 15.63,
+    "cfo_yi": 602.17, "capex_yi": 250.73, "fcf_yi": 351.44,
+    "roe_wavg_h1": 12.08,
+    "eps": 9.51,
+    "cash_yi": 3720.53, "equity_yi": 3793.54, "assets_yi": 11388.81, "liab_yi": 7249.26,
+    "inv_yi": 1308.19, "rec_yi": 884.18, "pay_yi": 2025.09, "contract_liab_yi": 364.83,
+    "st_debt_yi": 208.86, "lt_debt_yi": 742.63, "bonds_yi": 285.12,
+    "net_cash_approx_yi": 2483.92,
+    "asset_liab_ratio": 0.6365,
+    "util": 0.9486,
+    "rd_yi": 113.77,
+    "other_income_yi": 45.90,
+    "segments": {
+      "power_rev_yi": 1921.25, "power_gm": 20.63, "power_yoy": 0.4602,
+      "ess_rev_yi": 532.61, "ess_gm": 23.96, "ess_yoy": 0.8754,
+      "materials_rev_yi": 188.11, "materials_gm": 27.04, "materials_yoy": 0.6723
+    }
+  },
+  "dupont_2025": {"nm": 0.1704, "ato": 0.481, "em": 3.016, "roe": 0.2472},
+  "ths_eps_20260910": {
+    "y2026": {"n": 39, "mean": 20.77, "min": 19.65, "max": 22.14},
+    "y2027": {"n": 39, "mean": 25.88, "min": 23.68, "max": 29.99},
+    "y2028": {"n": 38, "mean": 31.07, "min": 28.42, "max": 36.27}
+  },
+  "valuation_baostock": {
+    "pe_ttm_0909": 18.335, "pb_0909": 4.108, "ps_ttm": 2.987,
+    "pe_pctile_5y": 12.47, "pb_pctile_5y": 12.96, "ps_pctile_5y": 34.27,
+    "pe_pctile_3y": 20.80, "pb_pctile_3y": 21.63
+  },
+  "pb_roe": {
+    "roe5": [21.52, 24.67, 24.04, 24.13, 24.91],
+    "roe5_avg": 23.854,
+    "pb_now": 4.21,
+    "pb_roe": 0.05666,
+    "pb_roe_pct": 5.67
+  },
+  "fwd": {
+    "pe_2026_cons": 16.33,
+    "pe_2027_cons": 13.11,
+    "peg_cons_2026g": 0.49,
+    "note": "339.18/20.77=16.33; 339.18/25.88=13.11"
+  },
+  "step5_neutral": {
+    "rev_yoy": [0.38, 0.16, 0.12],
+    "np_yoy": [0.27, 0.17, 0.14],
+    "np_yi": [917, 1073, 1223],
+    "eps": [19.82, 23.19, 26.43],
+    "fwd_pe_own": 17.11,
+    "np_cagr_25_28": 0.192,
+    "peg_own": 0.89
+  },
+  "share": {
+    "global_2025_sne": 0.392,
+    "global_2026_1_7_sne": 0.399,
+    "ess_2025_sne": 0.304,
+    "cn_2026h1_cabia": 0.4604,
+    "cn_2026h1_gwh": 154.25,
+    "cn_mkt_h1_gwh": 335.6,
+    "overseas_rev_2025": 0.306,
+    "sales_gwh_2025": 661
+  },
+  "peers_quote": {
+    "300014": {"name": "亿纬锂能", "pe": 18.58, "pb": 2.16, "gm2025": 16.17, "nm2025": 6.73, "np2025_yi": 41.34},
+    "002074": {"name": "国轩高科", "pe": 13.62, "pb": 1.55, "gm2025": 16.17, "nm2025": 5.29, "np2025_yi": 23.83},
+    "002594": {"name": "比亚迪", "pe": 26.11, "pb": 3.20, "gm2025": 17.74, "nm2025": 4.06, "np2025_yi": 326.19},
+    "300207": {"name": "欣旺达", "pe": 39.55, "pb": 1.32, "gm2025": 13.94, "nm2025": 1.67, "np2025_yi": 10.57}
+  },
+  "price_path": {
+    "high_2026": {"date": "2026-05-06", "close": 460.0},
+    "low_recent": {"date": "2026-09-08", "close": 335.49},
+    "close_0909": 336.84,
+    "dd_from_high": -0.2677,
+    "aug5_high": 405.2,
+    "drop_0805_to_0908": -0.172
+  },
+  "buyback": {
+    "announce": "2026-07-24",
+    "range_yi": [200, 400],
+    "cap_price": 573,
+    "asof": "2026-08-31",
+    "done": 0
+  }
+}
