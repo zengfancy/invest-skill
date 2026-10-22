@@ -1,9 +1,9 @@
 # fetch_log 300750
 
-- 17:26:53 tencent quotes ok price=220.41 pe=11.63
-- 17:26:53 sina lrb periods=12 latest=2026-09-30
-- 17:26:54 sina fzb periods=12 latest=2026-09-30
-- 17:26:55 sina llb periods=12 latest=2026-09-30
-- 17:26:56 ths FAIL keys must be str, int, float, bool or None, not tuple
-- 17:26:57 baostock ok n=1404 end=2026-10-22 pe_pct=0.08
-- 17:26:57 news n=25
+- 18:11:39 quote {'name': '宁德时代', 'price': 220.41, 'change_pct': -3.29, 'pe_ttm': 11.63, 'pb': 2.64, 'pe_static': 11.85, 'mcap_yi': 10198.92, 'float_mcap_yi': 9390.83, 'high': 225.19, 'low': 218.45, 'last_close': 227.9}
+- 18:11:39 sina lrb n=12 2026-09-30
+- 18:11:40 sina fzb n=12 2026-09-30
+- 18:11:41 sina llb n=12 2026-09-30
+- 18:11:42 ths eps=[{'年度': '2026', '预测机构数': '34', '最小值': '18.15', '均值': '20.5', '最大值': '21.65', '行业平均数': '2.49'}, {'年度': '2027', '预测机构数': '34', '最小值': '20.99', '均值': '25.36', '最大值': '29.99', '行业平均数': '3.29'}, {'年度': '2028', '预测机构数': '33', '最小值': '25.21', '均值': '30.36', '最大值': '36.27', '行业平均数': '4.1'}]
+- 18:11:58 baostock perc pe=0.08 dd={'high': 460.0, 'high_date': '2026-05-06', 'last': 220.41, 'last_date': '2026-10-22', 'drawdown_pct': -52.08}
+- 18:11:58 news n=30

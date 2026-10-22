@@ -2,35 +2,32 @@
   "series_end": "2026-10-22",
   "n_5y": 1212,
   "pe": {
-    "tencent_now": 11.63,
-    "sample_last": 11.629695,
+    "now": 11.63,
     "min": 11.629695,
     "max": 176.194371,
     "median": 24.3368455,
     "p25": 20.562684,
     "p75": 37.92851825,
-    "percentile_vs_tencent_now": 0.08,
-    "below_sample_min": false
+    "pct": 0.08
   },
   "pb": {
-    "tencent_now": 2.64,
-    "sample_last": 2.636191,
+    "now": 2.64,
     "min": 2.636191,
     "max": 22.059748,
     "median": 5.2410365,
     "p25": 4.41275375,
     "p75": 6.53792625,
-    "percentile_vs_tencent_now": 0.08,
-    "below_sample_min": false
+    "pct": 0.08
   },
-  "ps_last": {
-    "value": 1.750085,
-    "percentile": 4.95
+  "ps": {
+    "last": 1.750085,
+    "pct": 4.95
   },
   "price_path": {
-    "high_2026": 460.0,
+    "high": 460.0,
     "high_date": "2026-05-06",
-    "last_close_in_sample": 220.41,
-    "last_date": "2026-10-22"
+    "last": 220.41,
+    "last_date": "2026-10-22",
+    "drawdown_pct": -52.08
   }
 }
