@@ -1,0 +1,109 @@
+{
+  "ticker": "META",
+  "name_zh": "Meta",
+  "framework": "platform-leader-research",
+  "market": "US",
+  "as_of_price": {
+    "date": "2026-10-21",
+    "close": 697.52,
+    "ah_approx": 712.61,
+    "mcap_t_close": 1.78,
+    "ev_t": 1.81,
+    "shares_b": 2.55,
+    "source": "stockanalysis.com"
+  },
+  "valuation": {
+    "pe_ttm": 23.79,
+    "pe_forward": 20.97,
+    "ps_ttm": 7.35,
+    "pb": 6.54,
+    "peg": 1.07,
+    "ev_ebit": 22.76,
+    "fcf_ttm_b": 28.65,
+    "fcf_yield_pct": 1.61,
+    "ocf_ttm_b": 133.09,
+    "capex_ttm_b": 104.44,
+    "dividend_yield_pct": 0.3,
+    "buyback_yield_pct": 0.76,
+    "target_mean": 814.51,
+    "analyst_count": 63,
+    "consensus": "Strong Buy",
+    "rev_cagr_3y_forecast_pct": 21.96,
+    "eps_cagr_3y_forecast_pct": 10.53
+  },
+  "balance_q3_2026": {
+    "cash_and_marketable_b": 82.45,
+    "debt_long_term_b": 80.92,
+    "total_debt_approx_b": 112.1,
+    "net_debt_b": 29.65,
+    "equity_b": 272.39,
+    "headcount": 66775
+  },
+  "ttm_income": {
+    "revenue_b": 241.61,
+    "operating_income_b": 79.38,
+    "net_income_b": 75.25,
+    "eps": 29.33,
+    "op_margin_pct": 32.86
+  },
+  "fy2025": {
+    "revenue_b": 200.966,
+    "oi_b": 83.276,
+    "fcf_b": 43.585,
+    "ocf_b": 115.8,
+    "segments": {
+      "Family_of_Apps": {"sales_b": 198.759, "ads_b": 196.175, "oi_b": 102.469},
+      "Reality_Labs": {"sales_b": 2.207, "oi_b": -19.193}
+    }
+  },
+  "q2_2026": {
+    "revenue_b": 60.801,
+    "oi_b": 18.775,
+    "foa_sales_b": 60.37,
+    "foa_oi_b": 23.394,
+    "rl_sales_b": 0.431,
+    "rl_oi_b": -4.619,
+    "ads_b": 59.363,
+    "severance_b": 1.18,
+    "headcount_cut_may": 8000
+  },
+  "q3_2026": {
+    "ended": "2026-09-30",
+    "revenue_b": 64.601,
+    "yoy_pct": 26,
+    "oi_gaap_b": 12.988,
+    "oi_ex_legal_b": 22.88,
+    "legal_charge_b": 9.89,
+    "ag_settlement_total_up_to_b": 18.59,
+    "ni_b": 9.86,
+    "eps": 3.83,
+    "eps_ex_legal": 7.4,
+    "foa_sales_b": 64.2,
+    "foa_ads_b": 63.1,
+    "foa_other_b": 1.1,
+    "foa_oi_gaap_b": 17.1,
+    "rl_sales_b": 0.443,
+    "rl_oi_b": -4.13,
+    "dap_b": 3.64,
+    "ad_impressions_yoy_pct": 10,
+    "avg_price_per_ad_yoy_pct": 14,
+    "capex_incl_leases_b": 34.91,
+    "ocf_b": 32.79,
+    "fcf_b": -2.12,
+    "dividend_paid_b": 1.36,
+    "q4_rev_guide_b": [73, 76],
+    "fy2026_expense_guide_b": [175, 179],
+    "fy2026_capex_guide_b": [135, 145],
+    "prior_capex_guide_b": [130, 145],
+    "rl_loss_guide_fy2026_b": [18, 19],
+    "rl_loss_guide_fy2027_approx_b": 15,
+    "class_c_effective": "2027-01-19",
+    "stock_dividend_class_c": "1-for-1 then ~2-for-1 economic split on Class A price"
+  },
+  "catalysts": [
+    {"date": "2026-05", "event": "Headcount reduction ~8,000; Q2 severance $1.18B"},
+    {"date": "2026-08", "event": "AG settlement up to ~$18.59B; Q3 charge $9.89B"},
+    {"date": "2026-10-21", "event": "Q3 beat on rev; FCF -$2.1B; Capex narrowed $135-145B; Class C announced; Muse model"},
+    {"date": "2026-10-21", "event": "AH +2% to ~$713 after close $697.52"}
+  ]
+}

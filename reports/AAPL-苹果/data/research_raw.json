@@ -1,0 +1,126 @@
+{
+  "ticker": "AAPL",
+  "name_zh": "苹果",
+  "framework": "platform-leader-research",
+  "market": "US",
+  "fiscal_year_end": "late September",
+  "as_of_price": {
+    "date": "2026-10-21",
+    "close": 343.99,
+    "mcap_t": 5.02,
+    "ev_t": 4.96,
+    "shares_b": 14.59,
+    "source": "stockanalysis.com"
+  },
+  "valuation": {
+    "pe_ttm": 39.46,
+    "pe_forward": 37.48,
+    "ps_ttm": 10.75,
+    "pb": 46.74,
+    "peg": 3.38,
+    "ev_ebit": 32.02,
+    "fcf_ttm_b": 136.68,
+    "fcf_yield_pct": 2.72,
+    "ocf_ttm_b": 146.72,
+    "capex_ttm_b": 10.04,
+    "dividend_yield_pct": 0.31,
+    "buyback_yield_pct": 2.13,
+    "shareholder_yield_pct": 2.44,
+    "target_mean": 329.38,
+    "target_vs_price_pct": -4.25,
+    "analyst_count": 44,
+    "consensus": "Buy",
+    "rev_cagr_3y_forecast_pct": 11.17,
+    "eps_cagr_3y_forecast_pct": 13.26,
+    "next_earnings": "2026-11-02"
+  },
+  "balance": {
+    "cash_and_marketable_b": 146.52,
+    "debt_b": 84.34,
+    "net_cash_b": 62.17,
+    "equity_b": 107.52
+  },
+  "ttm_income": {
+    "revenue_b": 466.82,
+    "operating_income_b": 154.86,
+    "net_income_b": 128.93,
+    "eps": 8.72,
+    "op_margin_pct": 33.17,
+    "gross_margin_pct": 48.65
+  },
+  "fy2025": {
+    "ended": "2025-09-27",
+    "revenue_b": 416.161,
+    "products_b": 307.003,
+    "services_b": 109.158,
+    "gross_margin_b": 195.201,
+    "oi_b": 133.05,
+    "ni_b": 112.01,
+    "eps_diluted": 7.46,
+    "categories_b": {
+      "iPhone": 209.586,
+      "Mac": 33.708,
+      "iPad": 28.023,
+      "Wearables_Home_Accessories": 35.686,
+      "Services": 109.158
+    },
+    "regions_b": {
+      "Americas": 178.353,
+      "Europe": 111.032,
+      "Greater_China": 64.377,
+      "Japan": 28.703,
+      "Rest_of_Asia_Pacific": 33.696
+    }
+  },
+  "q3_fy2026": {
+    "ended": "2026-06-27",
+    "revenue_b": 109.417,
+    "yoy_pct": 16,
+    "products_b": 78.678,
+    "services_b": 30.739,
+    "gross_margin_pct": 50.1,
+    "tariff_refund_gm_benefit_pp": 2,
+    "oi_b": 35.695,
+    "ni_b": 29.789,
+    "eps": 2.02,
+    "eps_tariff_benefit": 0.11,
+    "opex_b": 19.075,
+    "categories_b": {
+      "iPhone": 54.252,
+      "Mac": 10.352,
+      "iPad": 6.191,
+      "Wearables": 7.883,
+      "Services": 30.739
+    },
+    "iphone_yoy_pct": 22,
+    "mac_yoy_pct": 29,
+    "services_yoy_pct": 12,
+    "greater_china_b": 18.816,
+    "greater_china_yoy_pct": 22,
+    "installed_base_b": 2.5,
+    "ocf_b": 34.4
+  },
+  "9m_fy2026": {
+    "revenue_b": 364.357,
+    "oi_b": 122.432,
+    "ni_b": 101.464,
+    "buybacks_b": 62.094,
+    "dividends_b": 11.778,
+    "ocf_b": 116.996,
+    "capex_ppe_b": 6.799
+  },
+  "q4_fy2026_guidance": {
+    "revenue_yoy_pct": [9, 11],
+    "iphone_growth": "mid-teens",
+    "gross_margin_pct": [47, 48],
+    "opex_b": [19.1, 19.4],
+    "note": "below Street; supply constraints / advanced chip bottlenecks"
+  },
+  "catalysts": [
+    {"date": "2026-07-30", "event": "Q3 beat; Sep qtr guide 9-11% below Street; supply constraints"},
+    {"date": "2026-09/10", "event": "iPhone 18 Pro launch; price +$100; memory cost pressure"},
+    {"date": "2026-10", "event": "Nikkei: cut Pro component orders 15-20%; China demand soft signals"},
+    {"date": "2026-11-02", "event": "FY26 Q4 earnings AMC"},
+    {"date": "2026-12", "event": "Apple Intelligence China debut reported (limited features)"}
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "ticker": "AMZN",
+  "name_zh": "亚马逊",
+  "framework": "platform-leader-research",
+  "market": "US",
+  "as_of_price": {
+    "date": "2026-10-21",
+    "close": 262.37,
+    "mcap_t": 2.83,
+    "ev_t": 2.96,
+    "shares_b": 10.79,
+    "source": "stockanalysis.com"
+  },
+  "valuation": {
+    "pe_ttm": 21.1,
+    "pe_forward": 27.89,
+    "ps_ttm": 3.65,
+    "pb": 5.13,
+    "peg": 1.34,
+    "ev_ebit": 31.57,
+    "ev_ebitda": 17.52,
+    "fcf_ttm_b": -11.63,
+    "fcf_yield_pct": -0.41,
+    "ocf_ttm_b": 161.4,
+    "capex_ttm_b": 173.03,
+    "target_mean": 331.46,
+    "analyst_count": 60,
+    "consensus": "Strong Buy",
+    "rev_cagr_3y_forecast_pct": 15.35,
+    "eps_cagr_3y_forecast_pct": 22.83,
+    "next_earnings": "2026-10-29",
+    "note_pe_ttm": "TTM NI inflated by Anthropic investment gains; prefer OI / forward PE"
+  },
+  "balance": {
+    "cash_b": 122.99,
+    "debt_b": 251.64,
+    "net_debt_b": 128.65,
+    "equity_b": 551.62,
+    "roe_pct": 30.56
+  },
+  "ttm_income": {
+    "revenue_b": 775.68,
+    "gross_profit_b": 393.81,
+    "operating_income_b": 93.71,
+    "net_income_b": 135.28,
+    "eps": 12.44,
+    "op_margin_pct": 12.08
+  },
+  "fy2025": {
+    "revenue_b": 716.9,
+    "oi_b": 80.0,
+    "ni_b": 77.7,
+    "eps": 7.17,
+    "ocf_b": 139.5,
+    "fcf_b": 11.2,
+    "segments": {
+      "North America": {"sales_b": 426.3, "oi_b": 29.6},
+      "International": {"sales_b": 161.9, "oi_b": 4.75},
+      "AWS": {"sales_b": 128.7, "oi_b": 45.6}
+    },
+    "product_groups_sales_b": {
+      "Online stores": 269.287,
+      "Physical stores": 22.561,
+      "Third-party seller services": 172.162,
+      "Advertising services": 68.635,
+      "Subscription services": 49.619,
+      "AWS": 128.725,
+      "Other": 5.935
+    }
+  },
+  "q2_2026": {
+    "ended": "2026-06-30",
+    "revenue_b": 200.6,
+    "oi_b": 27.5,
+    "ni_b": 62.6,
+    "eps_diluted": 5.75,
+    "non_op_other_income_b": 53.4,
+    "non_op_note": "primarily Anthropic investments",
+    "segments": {
+      "North America": {"sales_b": 116.2, "yoy_pct": 16, "oi_b": 9.1},
+      "International": {"sales_b": 42.2, "yoy_pct": 15, "oi_b": 1.7},
+      "AWS": {"sales_b": 42.2, "yoy_pct": 37, "oi_b": 16.6}
+    },
+    "ads_b": 19.8,
+    "ads_yoy_pct": 26,
+    "aws_arr_runrate_b": 169,
+    "ai_and_chips_runrate_each_b": 25,
+    "ttm_ocf_b": 161.4,
+    "ttm_fcf_b": -7.6,
+    "capex_cash_q2_b": 53.1,
+    "fy2026_capex_guide_b": 220,
+    "prior_capex_guide_b": 200
+  },
+  "h1_2026": {
+    "revenue_b": 382.125,
+    "oi_b": 51.313,
+    "ni_b": 92.902,
+    "non_op_income_b": 69.378,
+    "segments": {
+      "North America": {"sales_b": 220.32, "oi_b": 17.39},
+      "International": {"sales_b": 81.986, "oi_b": 3.141},
+      "AWS": {"sales_b": 79.819, "oi_b": 30.782}
+    }
+  },
+  "q3_2026_guidance": {
+    "sales_b": [197.0, 202.0],
+    "sales_yoy_pct": [9, 12],
+    "oi_b": [22.5, 26.5],
+    "oi_prior_year_b": 17.4,
+    "fx_headwind_bps": 80,
+    "prime_day_timing_note": "ex-Prime Day Q3 yoy ~+400bps"
+  },
+  "catalysts": [
+    {"date": "2026-07-30", "event": "Q2 beat; AWS +37%; capex guide to $220B; FCF negative TTM"},
+    {"date": "2026-08-31", "event": "FTC+22 states ads auction lawsuit"},
+    {"date": "2026-10", "event": "Mag7/macro selloff; AI spend vs FCF debate; drone hub political pressure"},
+    {"date": "2026-10-29", "event": "Q3 earnings AMC"}
+  ]
+}
