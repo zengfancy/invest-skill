@@ -1,23 +1,23 @@
 ---
 name: value-leader-research
 description: >-
-  用价值投资思路调研A股龙头价值股：基本面（生意模式、杜邦、FCF、营运资本）、近1–2年结构变化
+  用价值投资思路调研A股或美股龙头价值股：基本面（生意模式、杜邦、FCF、营运资本）、近1–2年结构变化
   （时间线、周期vs结构）、竞争格局（集中度与市占）、护城河（波特五力 + 毛利率/净利率/ROE同业比较）、
   成长性（行业与公司未来几年营收/净利润增速预测）、现阶段估值（含PE/PB历史分位、前向PE、
   PB-ROE=过去5年平均ROE/当前PB），并跟踪市场看法演变（叙事轴与预期差）、近期涨跌归因（量化窗口与主因排序）及可证伪结论跟踪。
   默认按股票建文件夹，九大部分各输出加厚分册 + 带表图的总览 + 一份表图为主的单独投研报告 + data 中间文件，禁止臆造数据。在用户要求深度研究/
-  投研报告/价值分析某龙头、蓝筹、行业龙头、白马股时使用。不适用于题材股、小市值股、亏损股、纯短线/打板标的。
+  投研报告/价值分析某龙头、蓝筹、行业龙头、白马股（含美股如JNJ、KO、BRK.B等）时使用。不适用于题材股、小市值股、亏损股、纯短线/打板标的。
 origin: custom
-version: 1.9.2
+version: 2.0.0
 ---
 
 # 龙头价值股调研（Value Leader Research）
 
-用**价值投资**思路与原则，对**行业龙头 / 大市值盈利企业**做结构化深度调研。
+用**价值投资**思路与原则，对**行业龙头 / 大市值盈利企业**做结构化深度调研（**A 股或美股**）。
 
 **交付形态（默认）：** 每只股票一个独立文件夹，三者都要有：① 九大部分**加厚分册**；② **总览**（关键指标表 + 图 + 各章浓缩表 + 目录）；③ 一份**单独的投研报告**（表图为主、详略中等）。另附 `data/` 中间文件。禁止为凑篇幅臆造数据。
 
-本 skill 规定「研究什么、按什么顺序、如何下结论、如何落盘」；取数优先复用本仓库的 `a-stock-*` skills。分册扩展细则见 `[reference.md](reference.md)`。
+本 skill 规定「研究什么、按什么顺序、如何下结论、如何落盘」；取数按上市地复用 `a-stock-*` 或 `us-stock-*`。分册扩展细则见 `[reference.md](reference.md)`。
 
 ## 适用与不适用（硬边界）
 
@@ -64,26 +64,45 @@ version: 1.9.2
 
 ### Step 0 — 资格预检
 
-确认代码、公司名、行业、市值量级、近两年是否持续盈利。若不适用，停止本流程。
+确认**上市地**（A 股 / 美股）、代码、公司名、行业、市值量级、近两年是否持续盈利。若不适用，停止本流程。
 
 ### Step 1 — 取数路由（本仓库）
 
-先读并执行 `[a-stock-core](../a-stock-core/SKILL.md)` 共用 helper，再按需打开：
+按上市地选主数据源，**禁止**用错误市场源静默代替。
 
+#### A 股
 
-| 目的                  | Skill                                                      | 典型接口                                                 |
-| ------------------- | ---------------------------------------------------------- | ---------------------------------------------------- |
-| 现价、市值、PE/PB 快照、同业对比 | `[a-stock-quote](../a-stock-quote/SKILL.md)`               | `tencent_quote`                                      |
-| 三表、估值历史分位、F10/资料    | `[a-stock-fundamentals](../a-stock-fundamentals/SKILL.md)` | `sina_financial_report`、`baostock_valuation_history` |
-| 研报、一致预期、公告          | `[a-stock-research](../a-stock-research/SKILL.md)`         | `eastmoney_reports`、`ths_eps_forecast`、公告            |
-| 新闻与催化（解释涨跌）         | `[a-stock-macro](../a-stock-macro/SKILL.md)` 新闻段           | `eastmoney_stock_news` 等                             |
-| 薄路由总览               | `[a-stock-data](../a-stock-data/SKILL.md)`                 | —                                                    |
+先读并执行 `[a-stock-core](../a-stock-core/SKILL.md)`，再按需：
 
+| 目的 | Skill | 典型接口 |
+|------|-------|----------|
+| 现价、市值、PE/PB 快照、同业对比 | `[a-stock-quote](../a-stock-quote/SKILL.md)` | `tencent_quote` |
+| 三表、估值历史分位、F10/资料 | `[a-stock-fundamentals](../a-stock-fundamentals/SKILL.md)` | `sina_financial_report`、`baostock_valuation_history` |
+| 研报、一致预期、公告 | `[a-stock-research](../a-stock-research/SKILL.md)` | `eastmoney_reports`、`ths_eps_forecast`、公告 |
+| 新闻与催化 | `[a-stock-macro](../a-stock-macro/SKILL.md)` | `eastmoney_stock_news` 等 |
+| 薄路由总览 | `[a-stock-data](../a-stock-data/SKILL.md)` | — |
 
-**默认不加载**（除非用户点名）：`a-stock-pulse`（打板/热榜）、`a-stock-capital`（两融/龙虎榜等）。筹码/资金流不作价值结论主证据。
+取数原则：能用通达信/腾讯就不用东财；东财必须走 `em_get` 限流。
 
-取数原则：能用通达信/腾讯就不用东财；东财必须走 `em_get` 限流；报告中注明数据时点与来源。  
-原始抓取结果写入该股文件夹的 `data/`（见「报告输出与落盘」），不要只留在对话里。
+**默认不加载**（除非用户点名）：`a-stock-pulse`、`a-stock-capital`。
+
+#### 美股
+
+先读并执行 `[us-stock-core](../us-stock-core/SKILL.md)`，再按需：
+
+| 目的 | Skill | 典型接口 |
+|------|-------|----------|
+| 现价、市值、前向 PE/PB | `[us-stock-quote](../us-stock-quote/SKILL.md)` | `yahoo_quote`、历史价 |
+| 三表、SEC 列表、估值历史 | `[us-stock-fundamentals](../us-stock-fundamentals/SKILL.md)` | Yahoo 财务、`sec_recent_filings` |
+| 目标价 / EPS 预期 / 财报日 | `[us-stock-research](../us-stock-research/SKILL.md)` | `yahoo_analyst_summary` |
+| 新闻与宏观 | `[us-stock-macro](../us-stock-macro/SKILL.md)` | `yahoo_news`、FRED |
+| 薄路由总览 | `[us-stock-data](../us-stock-data/SKILL.md)` | — |
+
+美股纪律：**GAAP vs Non-GAAP 分列**；年报以 10-K/10-Q（中概 ADR 注意 20-F）为准；一致预期粒度粗于 A 股同花顺时标明缺口。
+
+**默认不加载**（除非用户点名）：`us-stock-pulse`、`us-stock-capital`。
+
+报告中注明数据时点与来源；原始抓取写入该股 `data/`（见「报告输出与落盘」）。
 
 #### 1.1 缓存与催化保鲜（硬规则）
 
@@ -95,10 +114,12 @@ version: 1.9.2
 
 **催化检索最低动作（写 Step 7/8 前）：**
 
-1. 拉取个股近 **7–14 天**新闻（`a-stock-macro` 新闻端点优先）。  
-2. **Web 检索**至少两条：`{公司名} 下跌/大跌 原因`、`{公司名} 股价`（近一周）；必要时再搜大客户/行业关键词。  
-3. 扫客户侧与供应链：自研电池、二供中标、切换供应商、份额数据、监管处罚等——**不限于本公司公告**。  
-4. 将「媒体共识主因」与「本公司财报事实」分开记录；二者冲突时在报告中显式说明。
+1. 拉取个股近 **7–14 天**新闻（A 股用 `a-stock-macro`；美股用 `us-stock-macro`）。  
+2. **Web 检索**至少两条：  
+   - A 股：`{公司名} 下跌/大跌 原因`、`{公司名} 股价`  
+   - 美股：`{ticker} stock drop reason`、`{company} earnings`（近一周）  
+3. 扫客户侧与供应链/监管——**不限于本公司公告**。  
+4. 「媒体共识主因」与「本公司财报事实」分开记录；冲突时显式说明。
 
 ### Step 2 — 基本面（当下画像）
 
@@ -483,7 +504,7 @@ version: 1.9.2
 ### 文件夹结构
 
 ```text
-reports/{代码}-{简称}/
+reports/{代码或TICKER}-{简称}/
   00-总览.md                 # 元信息 + 一句话判断 + 关键指标表 + 图 + 各章浓缩（表为主） + 一级目录
   01-投资摘要.md
   02-基本面.md
@@ -499,7 +520,7 @@ reports/{代码}-{简称}/
     research_raw.json
 ```
 
-示例：`reports/300750-宁德时代/`，合订文件名为 `宁德时代-投研报告.md`。不同股票不得混用同一文件夹。
+示例：`reports/300750-宁德时代/`、`reports/JNJ-强生/`；合订如 `宁德时代-投研报告.md`、`强生-投研报告.md`。不同股票不得混用同一文件夹。
 
 ### 三层交付的篇幅与分工
 
@@ -566,7 +587,7 @@ reports/{代码}-{简称}/
 
 ## 质量自检（交付前勾选）
 
-- [ ] 已创建 `reports/{代码}-{简称}/`，含 `00`～`09`、`{简称}-投研报告.md` 与 `data/`  
+- [ ] 已创建 `reports/{代码或TICKER}-{简称}/`，含 `00`～`09`、`{简称}-投研报告.md` 与 `data/`；美股已走 `us-stock-*`  
 - [ ] `00-总览` 含各章浓缩（**表/图为主**，非九段散文）；≥1 张图；目录仅一级且链到九个分册 + 合订报告  
 - [ ] 合订投研报告覆盖九章逻辑、详略中等；**≥3 张图**；财务/份额/估值/预测/催化能成表的均已成表；数字与分册一致  
 - [ ] 已读并遵守 `[reference.md](reference.md)`：无臆造关键数字；缺口已标明  

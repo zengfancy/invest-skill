@@ -44,8 +44,13 @@ pip install mootdx requests pandas stockstats numpy baostock xlrd openpyxl
 
 iwencai 语义搜索另需 API Key，见 [a-stock-research](../a-stock-research/SKILL.md)。
 
+## 美股对照
+
+美股取数请用对称索引 [`us-stock-data`](../us-stock-data/SKILL.md)（Yahoo / SEC / FRED），不要用本套 A 股端点硬套美股。
+
 ## 溯源
 
 - 上游版本：V3.8.0
 - 整合记录：[docs/source-integration-v3.8.0.md](../a-stock-core/docs/source-integration-v3.8.0.md)
 - License：[../a-stock-core/LICENSE](../a-stock-core/LICENSE)
+

@@ -1,25 +1,25 @@
 ---
 name: growth-tech-research
 description: >-
-  用成长/科技股框架调研A股高成长与创新驱动公司：生意与单位经济、近1–2年结构变化、
+  用成长/科技股框架调研A股或美股高成长与创新驱动公司：生意与单位经济、近1–2年结构变化、
   行业空间与竞争格局、成长型护城河、管理层/研发组织/资本配置与稀释、成长路径与产品空间
   （TAM→收入桥+情景预测）、估值路由（盈利且PE≤50用Forward PE/PEG；未盈利或PE>50用PS/
   路径回推）、市场叙事与预期差、近期涨跌归因及可证伪跟踪。默认按股票建文件夹，十一大部分
   分册 + 总览 + 单独投研报告 + data/，禁止臆造数据。在用户要求深度研究半导体、创新药、
-  互联网/软件、高端制造成长股、未盈利或高PE成长公司时使用。不适用于稳态重资产价值龙头
-  （value-leader-research）、成熟主业+颠覆高方差标的如平台/品牌/IP龙头（platform-leader-research）、
-  纯题材炒作、纯短线打板。
+  互联网/软件、高端制造成长股、未盈利或高PE成长公司（含美股如NVDA、AMD、CRWD等）时使用。
+  不适用于稳态重资产价值龙头（value-leader-research）、成熟主业+颠覆高方差标的如平台/品牌/IP龙头
+  （platform-leader-research）、纯题材炒作、纯短线打板。
 origin: custom
-version: 1.1.0
+version: 2.0.0
 ---
 
 # 成长科技股调研（Growth Tech Research）
 
-用**成长与创新驱动**思路，对**半导体 / 创新药 / 互联网·软件 / 高端制造成长股**等做结构化深度调研。定价常吃叙事与路径，不以稳态 PB-ROE 为中心。
+用**成长与创新驱动**思路，对**半导体 / 创新药 / 互联网·软件 / 高端制造成长股**等做结构化深度调研（**A 股或美股**）。定价常吃叙事与路径，不以稳态 PB-ROE 为中心。
 
 **交付形态（默认）：** 每只股票一个独立文件夹，三者都要有：① 十一大部分**加厚分册**；② **总览**（关键指标表 + 图 + 各章浓缩表 + 目录）；③ 一份**单独投研报告**（表图为主、详略中等）。另附 `data/`。禁止为凑篇幅臆造数据。
 
-本 skill 规定「研究什么、按什么顺序、如何估值路由、如何落盘」；取数复用本仓库 `a-stock-*`。分册扩展细则见 `[reference.md](reference.md)`。  
+本 skill 规定「研究什么、按什么顺序、如何估值路由、如何落盘」；取数按上市地复用 `a-stock-*` 或 `us-stock-*`。分册扩展细则见 `[reference.md](reference.md)`。  
 - 稳态重资产龙头 → `[value-leader-research](../value-leader-research/SKILL.md)`  
 - 成熟主业+颠覆高方差（平台/品牌/IP） → `[platform-leader-research](../platform-leader-research/SKILL.md)`
 
@@ -65,10 +65,14 @@ version: 1.1.0
 
 ### Step 0 — 资格预检
 
-确认代码、公司名、行业、市值量级、盈利状态（已盈利 / 微利 / 亏损）、粗略 PE 或「无 PE」。  
+确认**上市地**（A 股 / 美股）、代码、公司名、行业、市值量级、盈利状态（已盈利 / 微利 / 亏损）、粗略 PE 或「无 PE」。  
 若更像稳态价值龙头 → `value-leader-research`。若为成熟主业+颠覆高方差 → `platform-leader-research`。若纯题材/打板 → 拒绝硬套。
 
 ### Step 1 — 取数路由（本仓库）
+
+按上市地选主数据源，**禁止**用错误市场源静默代替。
+
+#### A 股
 
 先读并执行 `[a-stock-core](../a-stock-core/SKILL.md)`，再按需：
 
@@ -80,9 +84,25 @@ version: 1.1.0
 | 新闻与催化 | `[a-stock-macro](../a-stock-macro/SKILL.md)` | 个股新闻等 |
 | 薄路由总览 | `[a-stock-data](../a-stock-data/SKILL.md)` | — |
 
-**默认不加载**（除非用户点名）：`a-stock-pulse`、`a-stock-capital`。筹码/资金流不作成长结论主证据。
+取数原则：能通达信/腾讯不用东财；东财走 `em_get`。  
+**默认不加载**：`a-stock-pulse`、`a-stock-capital`。
 
-取数原则：能通达信/腾讯不用东财；东财走 `em_get`；注明时点与来源；原始结果写入 `data/`。
+#### 美股
+
+先读并执行 `[us-stock-core](../us-stock-core/SKILL.md)`，再按需：
+
+| 目的 | Skill | 典型接口 |
+|------|-------|----------|
+| 现价、市值、PE/PS | `[us-stock-quote](../us-stock-quote/SKILL.md)` | `yahoo_quote` |
+| 三表、SEC、估值历史 | `[us-stock-fundamentals](../us-stock-fundamentals/SKILL.md)` | Yahoo 财务、10-K/10-Q |
+| 目标价 / EPS / 财报日 | `[us-stock-research](../us-stock-research/SKILL.md)` | `yahoo_analyst_summary` |
+| 新闻与宏观 | `[us-stock-macro](../us-stock-macro/SKILL.md)` | `yahoo_news`、FRED |
+| 薄路由总览 | `[us-stock-data](../us-stock-data/SKILL.md)` | — |
+
+美股纪律：**GAAP vs Non-GAAP 分列**；指引与电话会常决定定价，优先对照 8-K / earnings release；卖方目标价只作预期差旁证。  
+**默认不加载**：`us-stock-pulse`、`us-stock-capital`。
+
+注明时点与来源；原始结果写入 `data/`。
 
 #### 1.1 缓存与催化保鲜（硬规则）
 
@@ -94,9 +114,9 @@ version: 1.1.0
 
 **催化检索最低动作（写 Step 9/10 前）：**
 
-1. 拉取个股近 **7–14 天**新闻。  
-2. Web 检索至少两条：`{公司名} 下跌/大跌 原因`、`{公司名} 股价`（近一周）。  
-3. 按行业扫：客户导入/认证、管线读出、指引、出口管制、集采、政策。  
+1. 拉取个股近 **7–14 天**新闻（A：`a-stock-macro`；美：`us-stock-macro`）。  
+2. Web 至少两条：A 股用中文「下跌原因」；美股用 `{ticker} stock drop reason` / `{ticker} earnings`。  
+3. 按行业扫：客户导入/认证、管线读出、指引、出口管制、集采/FDA、政策。  
 4. 「媒体共识主因」与「本公司财报事实」分开；冲突时显式说明。
 
 ### Step 2 — 生意模式与财务画像（→ `02`）
@@ -417,7 +437,7 @@ version: 1.1.0
 细则见 `[reference.md](reference.md)`（写分册与合订前必读）。
 
 ```text
-reports/{代码}-{简称}/
+reports/{代码或TICKER}-{简称}/
   00-总览.md
   01-投资摘要.md
   02-生意模式与财务画像.md
@@ -455,7 +475,7 @@ reports/{代码}-{简称}/
 
 ## 质量自检（交付前勾选）
 
-- [ ] `reports/{代码}-{简称}/` 含 `00`～`11`、合订、`data/`  
+- [ ] `reports/{代码或TICKER}-{简称}/` 含 `00`～`11`、合订、`data/`；美股已走 `us-stock-*`  
 - [ ] 总览：一句话、关键指标、≥1 图、各章浓缩（表为主）、一级目录；已标估值路由  
 - [ ] 合订覆盖十一章、≥3 图、能成表已成表、数字与分册一致  
 - [ ] 已读 `reference.md`；无臆造；缺口已标明  
